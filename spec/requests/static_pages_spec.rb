@@ -9,7 +9,7 @@ describe "Static pages" do
 	describe "Home page" do
 		before {visit root_path}
 		
-		it { should have_selector('title', :text =>"SneedIn | Entdecken, Mitbestellen, Geld sparen!") }
+		it { should have_title("SneedIn | Entdecken, Mitbestellen, Geld sparen!") }
 		it { should have_selector('h1', :text =>"Entdecken, Mitbestellen, Geld sparen") }
 	end
 
@@ -18,7 +18,7 @@ describe "Static pages" do
 	describe "Ueber uns" do
 		before {visit ueberuns_path}
 		
-		it {should have_selector('title',:text =>"SneedIn | Über uns") }
+		it {should have_title("SneedIn | Über uns") }
 		it {should have_selector('h1', :text =>"Über uns")}
 	end	
 
@@ -27,7 +27,7 @@ describe "Static pages" do
 	describe "Kontakt" do
 		before {visit kontakt_path}
 
-		it {should have_selector('title',:text =>"SneedIn | Kontakt")}
+		it {should have_title("SneedIn | Kontakt")}
 		it {should have_selector('h1', :text =>"Kontakt")}
 	end
 
@@ -36,7 +36,7 @@ describe "Static pages" do
 	describe "Impressum" do
 		before {visit impressum_path}
 		
-		it {should have_selector('title',:text =>"SneedIn | Impressum")}
+		it {should have_title("SneedIn | Impressum")}
 		it {should have_selector('h1', :text =>"Impressum")}
 	end
 end
