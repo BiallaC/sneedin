@@ -1,9 +1,9 @@
-sneedin::Application.routes.draw do
+Sneedin::Application.routes.draw do
   root to: 'static_pages#home'
   
-  match '/ueberuns', to: 'static_pages#ueberuns'
-  match '/kontakt', to: 'static_pages#kontakt'
-  match '/impressum', to: 'static_pages#impressum'
+  match '/ueberuns', to: 'static_pages#ueberuns', via: 'get'
+  match '/kontakt', to: 'static_pages#kontakt', via: 'get'
+  match '/impressum', to: 'static_pages#impressum', via: 'get'
 
   
 
