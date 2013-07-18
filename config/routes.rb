@@ -1,8 +1,12 @@
-Sneedin::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/ueberuns"
-  get "static_pages/kontakt"
-  get "static_pages/impressum"
+sneedin::Application.routes.draw do
+  root to: 'static_pages#home'
+  
+  match '/ueberuns', to: 'static_pages#ueberuns'
+  match '/kontakt', to: 'static_pages#kontakt'
+  match '/impressum', to: 'static_pages#impressum'
+
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

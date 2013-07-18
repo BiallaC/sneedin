@@ -1,0 +1,101 @@
+@import "bootstrap";
+@import "font-awesome";
+
+/*	===================================
+		1. Calibration and Restauration
+		=================================== */
+
+		html {
+		  overflow-y: scroll;
+		}
+
+		body {
+		  padding-top: 100px;
+		}
+
+		section {
+		  overflow: auto;
+		}
+
+		textarea {
+		  resize: vertical;
+		}
+
+		.center {
+		  text-align: center;
+		}
+
+		.center h1 {
+		  margin-bottom: 10px;
+		}
+
+
+		
+/*	===================================
+		2. General Styles
+		=================================== */
+
+		li.homelist  {
+			font-size: 20px;
+			margin-left: 40px;
+			margin: 1em;
+		}
+		
+
+/*	===================================
+		3. Styles for Layoutparts
+		=================================== */
+
+		/* navbar */
+
+		.navbar-form {
+			padding-top: 20px;
+		}
+
+		/* forms */
+
+		
+
+		/* icons */
+		
+
+		.icon-ok {
+			color: #15A241;
+		}
+
+
+		/* footer */
+
+		footer {
+			margin-top: 45px;
+			padding-top: 5px;
+			border-top: 1px solid #eaeaea;
+			color: #999
+		}
+
+		footer a {
+		  color: #555;
+		}
+
+		footer a:hover {
+		  color: #222;
+		}
+
+		footer small {
+		  float: left;
+		}
+
+		footer ul {
+		  float: right;
+		  list-style: none;
+		}
+
+		footer ul li {
+		  float: left;
+		  margin-left: 10px;
+		}
+
+
+/*	===================================
+		4. Other Styles
+		=================================== */
